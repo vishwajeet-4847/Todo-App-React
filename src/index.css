@@ -1,13 +1,124 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.header{
+  font-family: "Roboto Serif", serif;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+  background-color: #fad000;
+  letter-spacing: 0.1rem;
+  padding: 0.3rem 2rem;
+  box-shadow: 2px 2px 1px yellow;
+    
+background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.todobox{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  width: 70%;
+  height: 70%;
+  position:absolute;
+  top:20%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 4px rgb(235 255 0 / 67%);
+  margin: 0 auto;
+  background-color: rgb(249, 214, 14);
+  background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
+  padding: 1rem;
+  border-radius: 5px;
+ 
+  margin-bottom: 1rem;
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+ 
+  
+}
+.todo-input-box{
+ 
+  padding: 0.9rem 1rem;
+  display: flex;
+  width: 70%;
+
+
+}
+.todo-input{
+  padding: 0.5rem;
+  width: 70%;
+  display: block;
+  outline: none;
+  border: transparent;
+  border-radius: 0.3rem;
+}
+.todo-input:focus{
+  outline: none;
+  box-shadow: 2px 2px 2px  yellow;
+}
+
+/* add button */
+.todo-input-box button{
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fad000;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-family: "Roboto Serif", serif;
+}
+
+/* todolist */
+.todolist{
+  list-style-type: none;
+  margin-top: 8%;
+  width:70%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+/* todolist item */
+
+.todo-list-item{
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  font-family: "Playwrite CU", cursive;
+  color: antiquewhite;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s linear;
+  padding: 0.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+
+
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.todo-list-item:hover{
+  background-color: #fadb0e;
+}
+/* delete icon */
+
+.todo-list-item span{
+  display: inline-block;
+  width: 6%;
+ 
+}
+.todo-list-item span img{
+  width:100%;
+}
+.todo-list-para{
+  margin-top: 3rem;
+  color: antiquewhite;
+  font-size: 1rem;
+  font-family:  "Roboto Serif", serif;;
 }
